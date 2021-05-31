@@ -72,6 +72,8 @@ function vitoria() {
         vitoriaJogador2()
     } else if (total1 < 19 && total2 === 21) {
         vitoriaJogador2()
+    } else if (total1 > 21 && total2 >= 19 && total2 <= 21) {
+        vitoriaJogador2()
     } else if (total2 === 19 && total1 === 20) {
         vitoriaJogador1()
     } else if (total2 === 19 && total1 === 21) {
@@ -83,6 +85,8 @@ function vitoria() {
     } else if (total2 < 19 && total1 === 20) {
         vitoriaJogador1()
     } else if (total2 < 19 && total1 === 21) {
+        vitoriaJogador1()
+    } else if (total2 > 21 && total1 >= 19 && total1 <= 21) {
         vitoriaJogador1()
     } else {
         alert("EMPATE!!!")
