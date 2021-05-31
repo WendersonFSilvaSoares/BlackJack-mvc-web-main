@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "BlackJack";
+}
+
+<h1 class="text-center mb-5">Jogo BlackJack</h1>
+
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="text-center mb-3">
+            <h3>Jogador Um</h3>
+            <p>Vitórias: <span id="vitorias1">0</span></p>
+
+            <img alt="carta1" src="/images/0.png" height="350" width="250" id="cartas1">
+
+            <div class="d-flex justify-content-around mt-3">
+                <button class="btn btn-primary" id="btn_jogador_1" onclick="jogador1()">
+                    Jogar
+                </button>
+                <button class="btn btn-primary" id="btn_parar_1" onclick="parar1()">
+                    Parar
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <h3 class="text-center">Partida</h3>
+            <div class="d-flex justify-content-around my-3">
+                <button class="btn btn-primary px-4" id="btn_iniciar" onclick="iniciar()">
+                    Iniciar
+                </button>
+                <button class="btn btn-primary px-4" id="btn_reiniciar" onclick="reiniciar()">
+                    Reiniciar
+                </button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span id="jogador1">0</span>
+                <span class="mx-2">X</span>
+                <span id="jogador2">0</span>
+            </div>
+        </div>
+        <div class="text-center mb-3">
+
+            <h3>Jogador Dois</h3>
+            <p>Vitórias: <span id="vitorias2">0</span></p>
+
+
+            <img alt="carta2" src="/images/0.png" height="350" width="250" id="cartas2">
+
+
+            <div class="d-flex justify-content-around mt-3">
+                <button class="btn btn-primary" id="btn_jogador_2" onclick="jogador2()">
+                    Jogar
+                </button>
+                <button class="btn btn-primary" id="btn_parar_2" onclick="parar2()">
+                    Parar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
